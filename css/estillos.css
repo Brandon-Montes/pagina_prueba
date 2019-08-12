@@ -1,0 +1,253 @@
+
+
+/* BODY */
+
+body {
+    text-align: center;
+    font: 300 16px/1.7 'Roboto'; 
+}
+
+navbar {
+    font: 300 16px/1.7 'Roboto Mon'; 
+}
+
+header {
+    height: 450px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* Tarifas */
+
+.tarifa {
+    text-align: left; 
+}
+
+.tarifa {
+    height: 450px;
+    background: url(../img/tarifas1.jpg) no-repeat center top; 
+    background-size: cover;
+    color: aliceblue;
+    
+}
+
+.izquierda {
+    max-width: 1055px;
+    margin: 0 auto; 
+}
+
+.tarifa p {
+    max-width: 450px;
+}
+
+.btn {
+    background: none;
+    border: 1px solid #fff;
+    padding: 10px  30px;
+    display: inline-block; 
+    text-decoration: none; 
+    color: #fff; 
+}
+
+.btn:hover {
+    background: rgb(249,249,249);
+    cursor: pointer;
+}
+
+
+/* Servicios*/
+
+ul li {
+    list-style: none; 
+}
+
+.lista {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.lista figure {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-flow: column; 
+    position: relative;
+    width: 150px;
+    height: 190px;
+}
+
+.lista figure:after {
+    position: absolute;
+    top:0;
+    left: 0;
+    border-radius:50%; 
+    z-index: 0;
+    background: #fff; 
+    width: 150px;
+    height: 150px;
+}
+
+.lista li {
+    padding: 0 30px; 
+}
+
+.lista figcaption {
+    position: relative;
+    left: 0;
+    top: 0; 
+    bottom: -40px; 
+}
+
+.lista img {
+    position: relative;
+    z-index: 1;
+
+}
+
+
+/* Quines_somos*/
+
+.titulo {
+    font: 300 35px/1.7 'Roboto';
+}
+
+.info {  
+    height: 450px;
+    display: block;
+}
+
+.info p {
+    max-width: 1055px;
+    margin: 0 auto; 
+}
+
+.map img {
+    max-width: 100%;
+    width: 100%;
+    
+}
+
+
+/*boton inicio */
+
+.boton a {
+    position: absolute; 
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    background:#0c002b; 
+    color: #1670f0; 
+    padding: 15px 20px;
+    font-size: 16px; 
+    letter-spacing: 2px; 
+    text-transform: uppercase; 
+    text-decoration: none; 
+    box-shadow: 0 20x 50px rgba(0,0,0,.5);
+    overflow: hidden;
+}
+
+ .boton a:before {
+    content: '';
+    position: absolute; 
+    top: 2px;
+    left: 2px; 
+    bottom: 2px;
+    width: 50%; 
+    background: rgba(255,255,255,0);
+}
+
+.boton a span:nth-child(1)
+{
+    position: absolute; 
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 2px;;
+    background: linear-gradient(to right, #0c002b, #1779ff);
+    animation: animate1 2s linear infinite; 
+}
+@keyframes animate1
+{
+    0%
+    {
+        transform: translateX(-100%); 
+    }
+    100%
+    {
+        transform: translateX(100%); 
+    }
+
+}
+
+.boton a span:nth-child(2)
+{
+    position: absolute; 
+    top:0;
+    right: 0;
+    width: 2%;
+    height: 100%;
+    background: linear-gradient(to bottom, #0c002b, #1779ff);
+    animation: animate2 2s linear infinite; 
+    animation-delay: 1s; 
+}
+@keyframes animate2
+{
+    0%
+    {
+        transform: translateY(-100%); 
+    }
+    100%
+    {   
+        transform: translateY(100%); 
+    }
+
+}
+
+.boton a span:nth-child(3)
+{
+    position: absolute; 
+    bottom:0;
+    left: 0;
+    width: 100%;
+    height: 2px;;
+    background: linear-gradient(to left, #0c002b, #1779ff);
+    animation: animate3 2s linear infinite; 
+}
+@keyframes animate3
+{
+    0%
+    {
+        transform: translateX(100%); 
+    }
+    100%
+    {   
+        transform: translateX(-100%); 
+    }
+
+}
+
+.boton a span:nth-child(4)
+{
+    position: absolute; 
+    top:0;
+    left: 0;
+    width: 2%;
+    height: 100%;
+    background: linear-gradient(to top, #0c002b, #1779ff);
+    animation: animate4 2s linear infinite; 
+    animation-delay: 1s; 
+}
+@keyframes animate4
+{
+    0%
+    {
+        transform: translateY(100%); 
+    }
+    100%
+    {   
+        transform: translateY(-100%); 
+    }
+
+}
